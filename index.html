@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tik Tak Toe</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-br from-black to-blue-900 text-white min-h-screen flex items-center justify-center">
+  <!-- Main Game Container -->
+  <div id="game-container" class="text-center space-y-6">
+    <!-- Title -->
+    <h1 class="text-4xl font-bold">Tik Tak Toe</h1>
+
+    <!-- Start Button -->
+    <button id="start-btn" class="px-6 py-3 bg-blue-600 text-white text-lg rounded-lg hover:bg-blue-700 focus:ring-4 focus:ring-blue-400 transition">
+      Start Game
+    </button>
+
+    <!-- Game Grid -->
+    <div id="game-grid" class="hidden grid grid-cols-3 gap-4 w-80 h-80 mx-auto mt-8">
+      <!-- Game Cells -->
+      <div class="cell bg-black/50 rounded-lg flex items-center justify-center cursor-pointer text-4xl font-bold hover:bg-blue-600 transition"></div>
+      <div class="cell bg-black/50 rounded-lg flex items-center justify-center cursor-pointer text-4xl font-bold hover:bg-blue-600 transition"></div>
+      <div class="cell bg-black/50 rounded-lg flex items-center justify-center cursor-pointer text-4xl font-bold hover:bg-blue-600 transition"></div>
+      <div class="cell bg-black/50 rounded-lg flex items-center justify-center cursor-pointer text-4xl font-bold hover:bg-blue-600 transition"></div>
+      <div class="cell bg-black/50 rounded-lg flex items-center justify-center cursor-pointer text-4xl font-bold hover:bg-blue-600 transition"></div>
+      <div class="cell bg-black/50 rounded-lg flex items-center justify-center cursor-pointer text-4xl font-bold hover:bg-blue-600 transition"></div>
+      <div class="cell bg-black/50 rounded-lg flex items-center justify-center cursor-pointer text-4xl font-bold hover:bg-blue-600 transition"></div>
+      <div class="cell bg-black/50 rounded-lg flex items-center justify-center cursor-pointer text-4xl font-bold hover:bg-blue-600 transition"></div>
+      <div class="cell bg-black/50 rounded-lg flex items-center justify-center cursor-pointer text-4xl font-bold hover:bg-blue-600 transition"></div>
+    </div>
+
+    <!-- Popup Modal -->
+    <div id="popup" class="hidden fixed inset-0 bg-black/80 flex items-center justify-center">
+      <div class="bg-white text-black rounded-lg p-6 text-center space-y-4">
+        <h2 id="winner-text" class="text-2xl font-bold"></h2>
+        <button id="restart-btn" class="px-6 py-3 bg-blue-600 text-white text-lg rounded-lg hover:bg-blue-700 focus:ring-4 focus:ring-blue-400 transition">
+          Restart Game
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
